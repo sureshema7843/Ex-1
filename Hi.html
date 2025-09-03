@@ -1,1 +1,71 @@
-<html><body>hello i am here</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffcccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .birthday-card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        .birthday-card h1 {
+            color: #ff6666;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .birthday-card p {
+            color: #333;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .message {
+            font-style: italic;
+            margin-top: 20px;
+        }
+        .cake-emoji {
+            font-size: 4em;
+            animation: bounce 1s infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="birthday-card">
+    <span class="cake-emoji">🎂</span>
+    <h1>Happy Birthday!</h1>
+    <p>Wishing you a day filled with joy, laughter, and everything that makes you happy. May all your dreams come true!</p>
+    <p class="message">Lots of love!</p>
+</div>
+
+</body>
+</html>
+
